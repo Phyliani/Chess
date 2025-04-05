@@ -1,6 +1,5 @@
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+
 
 public class MyWindow  extends JFrame{
     public MyWindow(){
@@ -16,6 +15,10 @@ public class MyWindow  extends JFrame{
         
         p.add(b1);
         p.add(b2);
+
+        MyController c = new MyController();
+        b1.addActionListener(c);
+        b2.addActionListener(c);
 
         pack();
     }

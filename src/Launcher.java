@@ -5,6 +5,6 @@ public class Launcher {
         MyWindow w = new MyWindow();
         w.setVisible(true);
 
-        
+
     }
 }
